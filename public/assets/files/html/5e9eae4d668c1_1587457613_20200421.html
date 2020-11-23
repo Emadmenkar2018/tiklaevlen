@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>{{{page_title}}}</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="/websites/hookup/css/linearicons.css">
+		<link rel="stylesheet" href="/websites/hookup/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/websites/hookup/css/availability-calendar.css">
+		<link rel="stylesheet" href="/websites/hookup/css/magnific-popup.css">
+		<link rel="stylesheet" href="/websites/hookup/css/nice-select.css">
+		<link rel="stylesheet" href="/websites/hookup/css/owl.carousel.css">
+		<link rel="stylesheet" href="/websites/hookup/css/bootstrap.css">
+		<link rel="stylesheet" href="/websites/hookup/css/main.css">
+	</head>
+	<body>
+
+		<!-- Start Header Area -->
+		<header>
+			<div class="container">
+				<div class="header-wrap">
+					<div class="header-top d-flex justify-content-between align-items-center">
+
+						 <nav class="col navbar navbar-expand-md justify-content-end">
+
+						  <!-- Toggler/collapsibe Button -->
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+							<span class="lnr lnr-menu"></span>
+						  </button>
+
+						  <!-- Navbar links -->
+						  <div class="collapse navbar-collapse menu-right" id="collapsibleNavbar">
+							<ul class="navbar-nav">
+							  <li class="nav-item">
+								<a class="nav-link" href="#home">Anasayfa</a>
+							  </li>
+							  <li class="nav-item">
+							   <a class="nav-link" href="#galeri">Galeri</a>
+							 </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="#etkinlikler">Etkinlikler</a>
+							  </li>
+							  <li class="nav-item">
+								<a class="nav-link" href="#hediyelistesi">Hediye Listesi</a>
+							  </li>
+
+							  <li class="nav-item">
+								<a class="nav-link" href="#kayitformu">Kayıt Formu</a>
+								</li>
+							</ul>
+						  </div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header Area -->
+
+		<!-- start banner Area -->
+		<section class="banner-area relative" id="home">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+					<div class="row fullscreen align-items-center justify-content-center" style="height: 915px;">
+						<div class="banner-content col-lg-12 col-md-12">
+							<h1>
+								{{date}} - {{{page_title}}}
+							</h1>
+						</div>
+					</div>
+			</div>
+		</section>
+		<!-- End banner Area -->
+
+		<!-- Start About Area -->
+		<section class="About-area pt-100 pb-60" id="about">
+			<div class="container">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-lg-12">
+						<h1>Hikayemiz #{{hashtag}}</h1>
+						{{#stories}}
+							<p>{{description}}</p>
+						{{/stories}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About Area -->
+
+
+		<!-- Start gallery Area -->
+		<section class="gallery-area pt-100" id="galeri">
+			<div class="container-fluid">
+				<div class="row headz justify-content-center">
+					<div class="col-lg-8">
+						<h1>Fotoğraflar</h1>
+
+					</div>
+				</div>
+				<div class="row no-padding">
+
+						{{#photos_arr}}
+						<div class="single-gallery col-md-3">
+							<img class="item" src="/{{path}}" alt="" style="width:100%;height:auto;">
+							</div>
+						{{/photos_arr}}
+
+
+				</div>
+			</div>
+		</section>
+		<!-- End gallery Area -->
+
+		<!-- Start countdown Area -->
+
+		<!-- End countdown Area -->
+
+		<!-- Start information Area -->
+
+		<section class="section-gap info-area" id="etkinlikler">
+			<div class="container">
+				<div class="row headz justify-content-center">
+					<div class="col-lg-6">
+						<h1>Etkinlikler</h1>
+
+					</div>
+				</div>
+				{{#schedules_arr}}
+
+					<div class="single-info row mt-80">
+
+						<div class="col-lg-12 col-md-12 mt-60 no-padding">
+							<div class="info-content" style="text-align:center;">
+								<h1>{{event_name}}</h1>
+								<p>{{description}}</p>
+								<div class="meta">
+									<p>{{event_location.venue_name}} - {{event_location.street_address}}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				{{/schedules_arr}}
+
+			</div>
+		</section>
+		<!-- End information Area -->
+
+
+		<section class="section-gap info-area" id="hediyelistesi">
+			<div class="container">
+				<div class="row headz justify-content-center">
+					<div class="col-lg-6">
+						<h1>Hediye Listesi</h1>
+					</div>
+				</div>
+
+				{{#registry_arr}}
+					<div class="col-lg-4 col-md-4 mt-20 no-padding">
+						<div>
+							<div class="single_program program_bg_1 text-center" style="background-size:cover;width:100%;height: 400px;background-image:url(/storage/{{imgs.id}}/{{imgs.file_name}})">
+		                    </div>
+							<div>
+								<a href="/shop/urunler/{{slug}}/h!{{user_id}}" target="_blank"><h3>{{name}}</h3></a>
+							</div>
+						</div>
+					</div>
+				{{/registry_arr}}
+			</div>
+		</section>
+
+		<!-- Start reservation Area -->
+		<section class="reservation-area section-gap relative" id="kayitformu">
+			<div class="container">
+				<div class="overlay overlay-bg"></div>
+				<div class="row headz justify-content-center">
+					<div class="col-lg-6">
+						<h1 class="text-white">Kayıt Formu</h1>
+					</div>
+				</div>
+				<div class="row no-padding justify-content-center mt-40">
+					<div class="col-lg-8">
+							<div class="row">
+								<div class="col-lg-6 d-flex flex-column mb-20">
+									<input name="name" placeholder="İsim Soyisim" class="form-control mt-20 rsvp_name" required="" type="text">
+								</div>
+								<div class="col-lg-6 d-flex flex-column mb-20">
+									<input name="email" placeholder="E-posta Adresi" class="form-control mt-20 rsvp_email" required="" type="email">
+								</div>
+
+								<div class="col-lg-12 d-flex flex-column">
+
+									<div tabindex="0">
+										<select class="form-control rsvp_guests">
+											<option value="1">1 Ziyaretçi</option>
+											<option value="2">2 Ziyaretçi</option>
+											<option value="3">3 Ziyaretçi</option>
+											<option value="4">4 Ziyaretçi</option>
+										</select>
+
+									</div>
+								</div>
+								<div class="col-lg-12 d-flex flex-column">
+									<textarea class="form-control mt-20 rsvp_messages" name="message" placeholder="Mesajınız" ></textarea>
+								</div>
+								<input type="hidden" class="website_user" value="{{user_id}}" />
+								<input type="hidden" class="token" value="{{token}}" />
+								<div class="col-lg-12 d-flex justify-content-center send-btn">
+									<button class="submit-btn primary-btn mt-20 text-uppercase rsvp_btn">KAYDET<span class="lnr lnr-arrow-right"></span></button>
+								</div>
+
+								<div class="alert-msg"></div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End reservation Area -->
+
+
+		<!-- start footer Area -->
+		<footer class="footer-area section-gap">
+			<div class="container">
+
+				<div class="row footer-bottom justify-content-center">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					<p class="col-lg-8 col-sm-12 footer-text">&copy;<script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır | Düğün Hediyem</p>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				</div>
+			</div>
+		</footer>
+		<!-- End footer Area -->
+
+
+	</body>
+</html>

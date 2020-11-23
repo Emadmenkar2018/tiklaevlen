@@ -1,0 +1,355 @@
+
+.header{
+	background-image:url('../img/website-index-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	height:500px;
+	background-position: center center;
+}
+.header .title{
+	margin-bottom:0;
+	font-size: 32px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	color:#333333;
+}
+.header .row{
+	flex-direction:column;
+}
+.header ul{
+	list-style-type: none;
+	padding-left: 25px;
+	margin-top: 20px;
+}
+.header ul li{
+	position: relative;
+	margin-bottom:15px;
+	font-size: 14px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	color:#21201F;
+}
+.header ul li:before {
+    content: "\f102";
+	font-family: "Flaticon";
+    display: inline-block;
+    height: 100%;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-right: .5em;
+    position: absolute;
+    left: -25px;
+    top: 0px;
+}
+
+.buy-btn{
+	background: #29ABE2;
+	border: 1px solid #29ABE2;
+	border-radius: 19px;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width:150px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buy-btn:hover{
+	color:white;
+}
+.wt-seemore{
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.wt-seemore .title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 22px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+}
+.wt-seemore .wt{
+	margin-top:40px;
+	margin-bottom:40px;
+}
+.wt-seemore .wt-item img{
+	width:100%;
+	height:auto;
+}
+.wt-seemore .see-more-btn{
+	background: #29ABE2;
+	border: 1px solid #29ABE2;
+	border-radius: 19px;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width:211px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.why-love{
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #F4F4F4;
+}
+.why-love .title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 22px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+}
+.why-love .item{
+	text-align: center;
+}
+.why-love .item-title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 20px;
+	color: #777677;
+	margin-top: 23px;
+}
+.why-love .item-desc{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+}
+.why-love .items{
+	margin-top:40px;
+}
+
+.free-website{
+	background:#ffffff;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.free-website .title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 22px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+}
+.free-website .steps{
+	margin-top:30px;
+}
+.free-website .step {
+	margin-bottom:30px;
+}
+.free-website .step h2{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 18px;
+	color: #29ABE2;
+}
+.free-website .step p{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+	margin-bottom:0;
+}
+.free-website .buy-btn{
+	background: #29ABE2;
+	border: 1px solid #29ABE2;
+	border-radius: 19px;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width:184px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:20px;
+}
+.registry-website{
+	width: 100%;
+	height:500px;
+	display: flex;
+	justify-content: space-between;
+}
+.registry-website .left{
+	width:50%;
+	background-color: #262724;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.registry-website .left .content h2{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 38px;
+	color: #FFFFFF;
+}
+.registry-website .left .content{
+	width: 382px;
+	margin-right: 90px;
+}
+.registry-website .left .content p{
+	margin-top:30px;
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.registry-website .left .website-btn{
+	border: 1px solid #ffffff;
+	border-radius: 19px;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width:184px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:20px;
+}
+.registry-website .right{
+	width:50%;
+	background-image:url(../img/website-index-registry-bg.jpg);
+	background-size: cover;
+}
+.registry-website .right img{
+	width: 100%;
+}
+.sss{
+	background:#ffffff;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.sss .title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 22px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+}
+.sss .subtitle{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+}
+.sss .questions{
+	margin-top:30px;
+	height: 265px;
+	overflow: hidden;
+}
+.sss .questions.open{
+	height: auto;
+}
+.sss .question {
+	margin-bottom:30px;
+}
+.sss .question h2{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 18px;
+	color: #29ABE2;
+}
+.sss  .questions.sozlesme{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 16px;
+	color: #777677;
+}
+.sss  .questions.sozlesme p{
+	font-size:16px;
+	margin-bottom:20px;
+}
+.sss  .questions li{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+	margin-bottom:0;
+}
+.sss  .questions p{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+	margin-bottom:0;
+}
+.sss .loadmore{
+	background-image: linear-gradient(180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
+	height: 135px;
+	margin-top: -100px;
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.sss .loadmore i::before{
+	font-size:32px;
+	color:#777677;
+}
+
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.registry-website .left .content{
+		margin-right: 0;
+		width: 80%;
+	}
+	.registry-website .left{
+		justify-content: center;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 567px) {
+	.header{
+		padding-left: 20px;
+	}
+	.wt-item{
+		margin-bottom: 20px;
+	}
+	.registry-website .right{
+		display: none;
+	}
+	.registry-website .left{
+	width: 100%;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

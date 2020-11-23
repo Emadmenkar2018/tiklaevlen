@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Http\Controllers;
+use Vanilo\Framework\Http\Controllers\ProductController as VaniloProductController;
+use Vanilo\Product\Models\Product;
+class WebsiteController extends VaniloProductController {
+    public function abc(){
+
+		return view('vanilo::product.website.list', [
+            'products' => Product::paginate(100)
+        ]);
+
+    }
+}

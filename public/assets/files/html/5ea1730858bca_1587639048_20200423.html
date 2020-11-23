@@ -1,0 +1,324 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{page_title}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/websites/sunsine/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/magnific-popup.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/themify-icons.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/nice-select.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/flaticon.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/flaticon.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/gijgo.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/slicknav.css">
+    <link rel="stylesheet" href="/websites/sunsine/css/style.css">
+    <!-- <link rel="stylesheet" href="/websites/sunsine/css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-->
+    <header>
+        <div class="header-area" id="header">
+            <div id="sticky-header" class="main-header-area" >
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="#header">Anasayfa</a></li>
+                                        <li><a href="#story">Hikayemiz</a></li>
+                                        <li><a href="#gallery">Galeri</a></li>
+										<li><a href="#schedules">Etkinlikler</a></li>
+
+                                        <li><a href="#contact">İletişim</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/ header-->
+
+    <!-- slider_area -->
+    <div class="slider_area ">
+        <div class="slider_area_inner slider_bg_1 overlay2" style="background-image:url({{main_image}})">
+            <div class="slider_text text-center">
+                <div class="text_inner">
+                    <img src="img/banner/ornaments.png" alt="">
+                    <h4>{{date}}</h4>
+                    <h3>{{page_title}}</h3>
+                    <span>{{page_message}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ slider_area -->
+
+    <!-- wedding_countdown -->
+
+    <!--/ wedding_countdown -->
+
+    <!-- our_love-story -->
+    <div class="love_story_area" id="story">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <h3>Hikayemiz #{{hashtag}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+				{{#stories}}
+					<p>{{description}}</p>
+				{{/stories}}
+            </div>
+        </div>
+    </div>
+    <!--/ our_love-story -->
+
+    <!-- gallery_area  -->
+    <div class="gallery_area" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <h3>FOTOĞRAFLAR</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row grid no-gutters">
+				{{#photos_arr}}
+					<div class="col-xl-4 col-md-6 col-lg-6 grid-item">
+	                    <div class="single_gallery gallery_imag_1" style="background-image:url(/{{path}});">
+	                        <a class="popup-image" href="/{{path}}">
+	                        </a>
+	                    </div>
+	                </div>
+				{{/photos_arr}}
+            </div>
+            <!-- <div class="grid row">
+                <div class="single_image grid-item">
+                    <img src="img/gallery/1.png" alt="">
+                </div><div class="single_image grid-item">
+                    <img src="img/gallery/2.png" alt="">
+                </div><div class="single_image grid-item">
+                    <img src="img/gallery/3.png" alt="">
+                </div>
+            </div> -->
+
+
+        </div>
+    </div>
+    <!--/ gallery_area  -->
+
+    <!-- program_details -->
+    <div class="program_details_area" id="schedules">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <h3>ETKİNLİKLER</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+				{{#schedules_arr}}
+					<div class="col-xl-4 col-lg-4">
+	                    <div class="single_program program_bg_1 text-center">
+	                        <div class="program_inner ">
+	                            <span>
+	                                {{event_location.venue_name}} - {{event_location.street_address}}
+	                            </span>
+	                            <h3>{{event_name}}</h3>
+	                            <p>{{description}}</p>
+	                            <img src="/websites/sunsine/img/program_details/ornaments.png" alt="">
+	                        </div>
+	                    </div>
+	                </div>
+				{{/schedules_arr}}
+            </div>
+        </div>
+    </div>
+
+	<div class="program_details_area" id="schedules">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center">
+                        <img src="img/banner/flowers.png" alt="">
+                        <h3>HEDİYE LİSTESİ</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+				{{#registry_arr}}
+					<div class="col-xl-4 col-lg-4">
+	                    <div class="single_program program_bg_1 text-center" style="height: 400px;background-image:url(/storage/{{imgs.id}}/{{imgs.file_name}})">
+	                    </div>
+						<div>
+							<a href="/shop/urunler/{{slug}}/h!{{user_id}}" target="_blank"><h3>{{name}}</h3></a>
+						</div>
+	                </div>
+				{{/registry_arr}}
+            </div>
+        </div>
+    </div>
+    <!--/ program_details -->
+	<!-- attend_area -->
+	<div class="attending_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
+					<div class="main_attending_area">
+						<div class="flower_1 d-none d-lg-block">
+							<img src="img/appointment/flower-top.png" alt="">
+						</div>
+						<div class="flower_2 d-none d-lg-block">
+							<img src="img/appointment/flower-bottom.png" alt="">
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-xl-7 col-lg-8">
+								<div class="popup_box ">
+									<div class="popup_inner">
+										<div class="form_heading text-center">
+											<h3>Are You Attending?</h3>
+											<p>Kindly respond before 30 August</p>
+										</div>
+											<div class="row">
+												<div class="col-xl-12">
+													<input type="text" placeholder="İsim ve Soyisim" class="rsvp_name">
+												</div>
+												<div class="col-xl-12">
+													<input type="text" placeholder="E-Posta" class="rsvp_email">
+												</div>
+												<div class="col-xl-12">
+													<select class="form-select form-control mb-20 wide rsvp_guests" id="default-select" class="">
+														<option value="1">1 Ziyaretçi</option>
+														<option value="2">2 Ziyaretçi</option>
+														<option value="3">3 Ziyaretçi</option>
+														<option value="4">4 Ziyaretçi</option>
+													</select>
+												</div>
+												<div class="col-xl-12">
+													<textarea placeholder="Mesajınız" class="rsvp_messages"></textarea>
+												</div>
+												<input type="hidden" class="website_user" value="{{user_id}}" />
+												<input type="hidden" class="token" value="{{token}}" />
+												<div class="col-xl-12">
+													<button class="boxed_btn3 rsvp_btn">KAYDET</button>
+												</div>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- / attend_area -->
+<!-- ================ contact section start ================= -->
+<section class="location_area" id="contact">
+    <div class="location_info">
+        <div class="location_inner">
+            <div class="location_top text-center">
+                    <h3>Location</h3>
+                    <p>{{address}}<br>
+                        <span>{{il}} - {{ilce}}</span>
+					 </p>
+            </div>
+            <div class="address_info d-flex justify-content-between">
+                <div class="single_address text-center">
+                    <h4>Where to stay</h4>
+                    <p>4:00p – 12:00p <br>
+                            The Secret Shrine Club</p>
+                </div>
+                <div class="single_address text-center">
+                    <h4>Activities</h4>
+                    <p>4:00p – 12:00p <br>
+                            The Secret Shrine Club</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- ================ contact section end ================= -->
+
+   <!-- footer_start -->
+   <footer class="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="quick_links">
+                        <ul>
+							<li><a href="#header">Anasayfa</a></li>
+							<li><a href="#story">Hikayemiz</a></li>
+							<li><a href="#gallery">Galeri</a></li>
+							<li><a href="#schedules">Etkinlikler</a></li>
+							<li><a href="#contact">İletişim</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right text-center">
+						Düğün Hediyem
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer_end -->
+
+    <!-- JS here -->
+
+
+</body>
+
+</html>

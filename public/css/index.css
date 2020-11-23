@@ -1,0 +1,277 @@
+.index-header{
+	background-image:url('../img/index-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	height:500px;
+	background-position: center center;
+}
+.index-header .row{
+
+	margin-top: 100px;
+}
+.index-header h1{
+	font-size: 42px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color:#a43143;
+}
+.index-header p{
+	font-size: 14px;
+	font-family: 'Calibri', sans-serif;
+	font-weight: 400;
+	color:#a43143;
+}
+.why-love{
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #F4F4F4;
+}
+.why-love .title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 22px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+}
+.why-love .item{
+	text-align: center;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height:230px;
+}
+.why-love .item-title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 20px;
+	color: #777677;
+}
+.why-love .item-desc{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+}
+.why-love .items{
+	margin-top:40px;
+}
+
+
+.registry-row{
+	background-image:url('../img/index-registry-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:100%;
+	height:500px;
+	background-position: center center;
+}
+.registry-row .title{
+	margin-bottom:0;
+	font-size: 32px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	color:#333333;
+}
+.registry-row .row{
+	flex-direction:column;
+}
+.registry-row ul{
+	list-style-type: none;
+	padding-left: 25px;
+	margin-top: 20px;
+}
+.registry-row ul li{
+	position: relative;
+	margin-bottom:15px;
+	font-size: 14px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	color:#21201F;
+}
+.registry-row ul li:before {
+    content: "\f102";
+	font-family: "Flaticon";
+    display: inline-block;
+    height: 100%;
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-right: .5em;
+    position: absolute;
+    left: -25px;
+    top: 0px;
+}
+
+.buy-btn{
+	background: #29ABE2;
+	border: 1px solid #29ABE2;
+	border-radius: 19px;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width:150px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buy-btn:hover{
+	color:white;
+}
+.sss{
+	background:#ffffff;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.sss .title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 22px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+}
+.sss .subtitle{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #333333;
+	text-align: center;
+	width: 100%;
+}
+.sss .questions{
+	margin-top:30px;
+	height: 265px;
+	overflow: hidden;
+}
+.sss .questions.open{
+	height: auto;
+}
+.sss .question {
+	margin-bottom:30px;
+}
+.sss .question h2{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 18px;
+	color: #29ABE2;
+}
+.sss .question p{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+	margin-bottom:0;
+}
+.sss .loadmore{
+	background-image: linear-gradient(180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%);
+	height: 135px;
+	margin-top: -100px;
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.sss .loadmore i::before{
+	font-size:32px;
+	color:#777677;
+}
+.brands{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #FCFCFC;
+}
+.brands .title{
+	width: 100%;
+	text-align: center;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 22px;
+	color: #21201F;
+}
+.brands .brand img{
+	width: 100%;
+	height: auto;
+}
+.brands .brand .brand-title{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 20px;
+	color: #333333;
+	margin-top:16px;
+}
+.brands .brand .brand-desc{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+}
+.brands .row{
+	margin-top:44px;
+}
+.brands .owl-nav{
+	position: absolute;
+	top:35%;
+	width: 100%;
+}
+.brands .owl-nav i::before{
+	font-size: 32px;
+	color:#29ABE2;
+}
+.brands .owl-nav .owl-prev{
+	position: absolute;
+	left:-50px;
+}
+.brands .owl-nav .owl-next{
+	position: absolute;
+	right:-50px;
+}
+
+
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 567px) {
+	.why-love .item{
+		margin-bottom: 20px;
+	}
+	.registry-row .row{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.brand{
+		text-align: center;
+	}
+	.topbar .row{
+		justify-content: center;
+	}
+	.list-header{
+		text-align: center;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

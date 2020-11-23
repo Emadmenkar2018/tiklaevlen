@@ -1,0 +1,77 @@
+.cart_title{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size:30px;
+	color:#29ABE2;
+	margin-bottom: 50px;
+}
+.cart_no-item{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size:14px;
+	color:#333333;
+}
+.table{
+	border-collapse: separate;
+border-spacing: 0 1.5em;
+}
+.cart_item{
+	box-shadow: 0 2px 28px 0 rgba(0,0,0,0.05);
+	border-radius: 9px;
+	height: 100px;
+}
+.cart_item td{
+	vertical-align: middle;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+}
+.c_total{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700!important;
+	font-size:20px;
+	color:#333333;
+}
+.cart-qty{
+	border: 1px solid #E6E6E6;
+	border-radius: 20.5px!important;
+	height: 45px;
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+	width: 60px;
+	text-align: center;
+}
+.c-shopping{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size:14px;
+	color:#777677;
+}
+.c-shopping:hover{
+	color:#777677;
+}
+.cart-btn{
+	border:1px solid #29ABE2;
+	background: #29ABE2;
+	border-radius: 19px;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width:100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+}
+.cart-btn:hover{
+	color:white;
+}
+.c_bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

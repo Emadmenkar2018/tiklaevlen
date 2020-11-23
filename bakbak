@@ -1,0 +1,45 @@
+<article class="card shadow-sm">
+
+	@foreach($product->product_images as $img_key => $imgs)
+		<div class="product_image p_img_{{$product->id}} p_img_{{$product->id}}_{{$img_key}} {{$img_key == $product->active_color ? ('active'):('')}}">
+			<a href="{{ route('product.show', $product) }}" class="product_link_{{$product->id}}" data-baselink="{{ route('product.show', $product) }}">
+				<img class="card-img-top" src="/storage/{{$imgs[0]->id}}/{{$imgs[0]->file_name}}" alt="{{ $product->name }}" />
+			</a>
+		</div>
+	@endforeach
+    <div class="card-body">
+        <h5><a href="{{ route('product.show', $product) }}" data-baselink="{{ route('product.show', $product) }}" class="product_link_{{$product->id}}">{{ $product->name }}</a></h5>
+        <p class="card-text">{{ format_price($product->price) }}</p>
+		<div class="colors" style="display:flex;">
+			@if($product->colors)
+				@php
+					$i = 0;
+				@endphp
+				@foreach($product->colors as $color)
+					<div class="product-color color {{$color}} product-color{{$product->id}} {{$color == $product->active_color ? ('active'):('')}}" data-product="{{$product->id}}" data-color="{{$color}}" style="background-color:{{$color}};"></div>
+					@php
+						$i++;
+					@endphp
+				@endforeach
+			@endif
+		</div>
+		@if($product->registryView == true)
+			<div class="non-registry-view non-registry-view{{$product->id}}"
+			@if(!$product->registry)
+				style="display:block;"
+			@endif
+			>
+				<input type="number" class="registry-quantity quantity{{$product->id}}" value="1" />
+				<a href="#" data-product="{{$product->id}}" data-activecolor="{{$product->active_color}}" class="add-registry btn btn-sm btn-primary float-right pt-0 pb-0">Hediye Listesine Ekle</a>
+			</div>
+			<div class="registry-view registry-view{{$product->id}}" @if($product->registry) style="display:block;" @endif>
+				<a data-product="{{$product->id}}"  href="#"
+				@if($product->registry)
+					data-registry="{{$product->registry->id}}"
+				@endif
+				class="remove-registry remove-registry{{$product->id}} btn btn-sm btn-primary float-right pt-0 pb-0">Hediye Listesinden Kaldır</a>
+			</div>
+		@endif
+    </div>
+
+</article>

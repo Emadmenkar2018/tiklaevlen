@@ -1,0 +1,114 @@
+.website-detail .image img{
+	width: 100%;
+	height:auto;
+}
+.website-detail{
+	padding-top: 69px;
+	padding-bottom: 69px;
+}
+.website-detail .detail{
+	padding-top: 38px;
+}
+.website-detail .detail .title{
+	font-size: 26px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	color:#333333;
+}
+.website-detail .detail .price{
+	padding-bottom: 19px;
+	border-bottom: 1px solid #E6E6E6;
+	font-size: 32px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	color:#333333;
+}
+.website-detail .detail .colors{
+	display: flex;
+	flex-wrap: wrap;
+}
+.website-detail .detail .color-wrapper{
+	width: 46px;
+	height: 24px;
+	border:1px solid #E9E9E9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor:pointer;
+	margin-right: 6px;
+	margin-top:8px;
+}
+.website-detail .detail .color-wrapper:hover{
+	border-color:#838283;
+}
+.website-detail .detail .color-wrapper.active{
+	border-color:#838283;
+}
+.website-detail .detail .color{
+	width:28px;
+	height: 5px;
+}
+.website-detail .detail .color-title{
+	font-size: 14px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	color:#777677;
+	margin-top:20px;
+}
+.website-detail .detail .buttons{
+	margin-top:36px;
+	display: flex;
+	padding-bottom:50px;
+	border-bottom: 1px solid #E6E6E6;
+}
+.website-detail .detail .customize-btn{
+	background: #29ABE2;
+	border: 1px solid #29ABE2;
+	border-radius: 21px;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 14px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	width:170px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.website-detail .detail .preview-btn{
+	border: 1px solid #29ABE2;
+	border-radius: 21px;
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 14px;
+	color: #777677;
+	letter-spacing: 0;
+	width:127px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left:10px;
+}
+.website-detail .detail h4{
+	font-family:  'Source Sans Pro';
+	font-weight: 700;
+	font-size: 16px;
+	color: #333333;
+	margin-bottom:20px;
+	margin-top:30px;
+}
+.website-detail .detail p,li{
+	font-family:  'Source Sans Pro';
+	font-weight: 400;
+	font-size: 14px;
+	color: #777677;
+}
+.website-detail .detail ul{
+	padding:0;
+	list-style-type: none;
+}
+.website-detail .detail ul li{
+	margin-bottom:20px;
+}

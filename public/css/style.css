@@ -1,0 +1,26 @@
+.color{
+	margin-right:10px;width:40px;height:40px;
+	border-radius:20px;
+	cursor:pointer;
+}
+.color.active{
+	border:1px solid black;
+}
+.non-registry-view{
+	display:none;
+}
+.registry-view{
+	display:none;
+}
+.product_image{
+	display: none;
+}
+.product_image.active{
+	display: block;
+}
+.parsley-errors-list{
+	display:none;
+}
+.parsley-error{
+	border-color:red;
+}

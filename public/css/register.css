@@ -1,0 +1,131 @@
+.register{
+	width: 100%;
+	height: 100vh;
+	background-color: #e5eef7;
+}
+.register-container{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.register-footer{
+	bottom: 0;
+    color: #003b58;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.38;
+    overflow: hidden;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+    background-color: #e5eef7;
+    box-shadow: 0 -2px 6px 0 rgba(0,0,0,.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.step{
+	display: none;
+}
+.step.active{
+	display: block;
+}
+.step-form-row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.step .step-title{
+	color: #003b58;
+    font-family: 'Source Sans Pro';
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    margin-bottom: 46px;
+	text-align: center;
+}
+.step .btn{
+	width: 230px;
+	height: 40px;
+	font-family:  'Source Sans Pro';
+	background-color: #29ABE2;
+	border-color: #29ABE2;
+	margin-top: 50px;
+}
+.step .form_input{
+	background-color: transparent;
+	border:0;
+	border-bottom: 2px solid #333333;
+    border-radius: 0px!important;
+
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-size: 36px;
+    color: #333333;
+	padding: 8px 12px;
+}
+.step .form-check-label{
+	color: #003b58;
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    font-weight: 400;
+	font-size:20px;
+}
+.step .form-check-input{
+	margin-top: 0;
+}
+.step.katilimci .step-title{
+	margin-bottom: 0!important;
+}
+.step .step-subtitle{
+	margin-bottom: 46px;
+	text-align: center;
+	color: #003b58;
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    font-weight: 400;
+	font-size:20px;
+	margin-top: 20px;
+}
+.step .select2-container--default .select2-selection--single{
+	background-color: transparent;
+	border:0;
+	border-bottom: 2px solid #333333;
+    border-radius: 0px!important;
+    height: 45px;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-size: 36px;
+    color: #333333;
+	padding: 8px 12px;
+}
+.step .select2-container{
+	width: 100%!important;
+}
+.step .step-bottom{
+	text-align: center;
+	color: #003b58;
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    font-weight: 400;
+	font-size:20px;
+	margin-top: 40px;
+}
+.box-item{
+	background-color: #fff;
+    display: inline-block;
+    float: left;
+    font-weight: 400;
+    height: 200px;
+    text-align: center;
+    text-shadow: none;
+    text-transform: none;
+    vertical-align: middle;
+    width: 100%;
+}
+.back-btn{
+	position: absolute;
+	left: 20px;
+}
